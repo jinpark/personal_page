@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jin-Woo Park</title>
+  <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+  <meta name="robots" content="all" />
+  <style>
+    * { padding: 0; margin: 0; font-family: 'Lato', sans-serif; font-weight: 700;}
+    .hidden { display: none;}
+    p { color: #C8C8C8; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+    a { color: #C8C8C8; font-weight: bold; text-decoration: none; border-bottom: 1px solid #292929; }
+    a:hover { border-bottom: 1px solid rgba(255,255,255,1); }
+    .social { width: 50%; margin: auto;}
+    .social li {display:inline;list-style-type:none;}
+    .social a {text-decoration: none; padding: 0px 23px 0px 0px; border-style: none;}
+    .social a:link,#navlist a:visited {text-decoration: none; opacity:0.4; border-style: none;}
+    .social a:hover {text-decoration: none;opacity:0.6;border-style: none;}
+    .social img {border:none; -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);}
+    .about { width: 75%; margin: auto; background: rgba(255,255,255,0.2); padding: 10px;}
+    .info p { color: #C8C8C8; }
+    div.name { margin-top: 5%; }
+    h1 { text-align: center; color: #D8D8D8; font-size: 3.375rem;}
+    h2 { text-align: center; color: #D8D8D8; font-size: 2.25rem;}
+    .about { text-align: center; margin-bottom: 20px;}
+    hr { height: 5px; width: 35px; margin: 2.25em auto; border: 0 none; background-color: red; }
+    button {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: 1px solid #C8C8C8;
+        padding: 10px;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        color: #C8C8C8;
+        margin: 10px auto;
+    }
+    @media (max-width: 600px) {
+      .social {
+        width: 100%;
+      }
+    }
+    .wrapper { text-align: center; }
+    .social img { width:50px; height:50px;}
+  </style>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22951868-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head> 
+<body>
+<div class="name">
+  <h1 class='english-name'>JIN-WOO PARK</h1>
+  <h1 class='korean-name'>박진우</h1>
+</div>
+<hr>
+<h2 class='title'>Software Engineer</h2>
+<div class="wrapper">
+  <button class='more'>Learn More</button>
+</div>
+
+<div class="about hidden">
+  <div class="info" align="justify"> 
+    <p>Hello! My name is Jin-Woo Park, a software engineer with an interest in web development, data science, machine learning, data visualization and biomedical engineering.</p>
+    <p>I'm currently remotely working for <a href="http://www.dramafever.com">DramaFever</a> as a web developer in Seoul.</p>
+    <p>Contact me at <a href="mailto:jin@jinpark.net">jin@jinpark.net</a> </p>
+  </div>
+  <div class="social">
+    <a href="http://www.facebook.com/jinpark">
+      <img class='sociallogo' src="images/facebook.png" />
+    </a>
+    <a href="http://www.last.fm/user/jinp6301/">
+      <img class='sociallogo' src="images/lastfm.png" />
+    </a>
+    <a href="http://www.flickr.com/photos/52570799@N03/">
+      <img class='sociallogo' src="images/flickr.png" />
+    </a>
+    <a href="http://blog.jinpark.net/">
+      <img class='sociallogo' src="images/tumblr.png" />
+    </a>
+    <a href="https://github.com/jinpark">
+      <img class='sociallogo' src="images/github.png" />
+    </a>
+  </div>  
+</div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$.backstretch(["images/camerajin-dark.jpg"]);
+$('.more').click(function(){
+  $('.more').fadeTo(1000, 0, function(){
+    $(this).css("visibility", "hidden");
+  });
+  $('div.about').fadeIn();
+})
+</script>
+
+</body> 
+</html>
