@@ -1,62 +1,62 @@
 <!doctype html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jin-Woo Park</title>
-  <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
-  <meta name="robots" content="all" />
-  <link href='main.css' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-  
-  <script type="text/javascript">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jin-Woo Park</title>
+    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="robots" content="all" />
+    <link href='main.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22951868-1']);
-  _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22951868-1']);
+    _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 
 </script>
 </head> 
 <body>
 <div class="name">
-  <h1 class='english-name'>JIN-WOO PARK</h1>
-  <h1 class='korean-name'>박진우</h1>
+    <h1 class='english-name'>JIN-WOO PARK</h1>
+    <h1 class='korean-name'>박진우</h1>
 </div>
 <hr>
 <h2 class='title'>Software Engineer</h2>
 <div class="wrapper">
-  <button class='more'>Learn More</button>
+    <button class='more'>Learn More</button>
 </div>
 
-<div class="about hidden">
-  <div class="info" align="justify"> 
-    <p>Hello! My name is Jin-Woo Park, a software engineer with an interest in web development, data science, machine learning, data visualization and biomedical engineering.</p>
-    <p>I'm currently working remotely for <a href="http://www.dramafever.com">DramaFever</a> as a web developer in Seoul.</p>
-    <p>Contact me at <a href="mailto:jin@jinpark.net">jin@jinpark.net</a> </p>
-  </div>
-  <div class="social">
-    <a href="http://www.facebook.com/jinpark">
-      <img class='sociallogo' src="images/facebook.png" />
-    </a>
-    <a href="http://www.last.fm/user/jinp6301/">
-      <img class='sociallogo' src="images/lastfm.png" />
-    </a>
-    <a href="http://www.flickr.com/photos/52570799@N03/">
-      <img class='sociallogo' src="images/flickr.png" />
-    </a>
-    <a href="http://blog.jinpark.net/">
-      <img class='sociallogo' src="images/tumblr.png" />
-    </a>
-    <a href="https://github.com/jinpark">
-      <img class='sociallogo' src="images/github.png" />
-    </a>
-  </div>  
+<div class="about hidden" id="about">
+    <div class="info" align="justify"> 
+        <p>Hello! My name is Jin-Woo Park, a software engineer with an interest in web development, data science, machine learning, data visualization and biomedical engineering.</p>
+        <p>I'm currently working remotely for <a href="http://www.dramafever.com">DramaFever</a> as a web developer in Seoul.</p>
+        <p>Contact me at <a href="mailto:jin@jinpark.net">jin@jinpark.net</a> </p>
+    </div>
+    <div class="social">
+        <a href="http://www.facebook.com/jinpark">
+            <img class='sociallogo' src="images/facebook.png" />
+        </a>
+        <a href="http://www.last.fm/user/jinp6301/">
+            <img class='sociallogo' src="images/lastfm.png" />
+        </a>
+        <a href="http://www.flickr.com/photos/52570799@N03/">
+            <img class='sociallogo' src="images/flickr.png" />
+        </a>
+        <a href="http://blog.jinpark.net/">
+            <img class='sociallogo' src="images/tumblr.png" />
+        </a>
+        <a href="https://github.com/jinpark">
+            <img class='sociallogo' src="images/github.png" />
+        </a>
+    </div>    
 </div>
 
 
@@ -65,10 +65,13 @@
 <script type="text/javascript">
 $.backstretch(["images/camerajin-dark.jpg"]);
 $('.more').click(function(){
-  $('.more').fadeTo(1000, 0, function(){
-    $(this).css("visibility", "hidden");
-  });
-  $('div.about').fadeIn();
+    $('.more').fadeTo(1000, 0, function(){
+        $(this).css("visibility", "hidden");
+        $('html,body').animate({
+         scrollTop: $("#about").offset().top
+        });
+    });
+    $('div.about').fadeIn();
 })
 </script>
 
