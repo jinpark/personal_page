@@ -6,22 +6,8 @@
     <title>Jin-Woo Park</title>
     <link rel="Shortcut Icon" href="images/favicon.ico" type="image/x-icon" />
     <meta name="robots" content="all" />
-    <link href='main.css' rel='stylesheet' type='text/css'>
+    <link href='main.min.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-
-    <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-22951868-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-</script>
 </head>
 <body>
 <div class="name">
@@ -61,9 +47,7 @@
 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.backstretch.min.js"></script>
 <script type="text/javascript">
-$.backstretch(["https://images.jinpark.net/https://jinpark.net/images/camerajin-dark.jpg/"]);
 $('.more').click(function(){
     $('.more').fadeTo(1000, 0, function(){
         $(this).css("visibility", "hidden");
@@ -73,6 +57,17 @@ $('.more').click(function(){
     });
     $('div.about').fadeIn();
 })
+</script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22951868-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 
 </body>
