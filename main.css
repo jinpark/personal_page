@@ -4,12 +4,9 @@
     margin: 0;
     padding: 0;
 }
-html { font-size: 16px; }
-body { 
-    background-image:url('images/camerajin-dark.jpg');
-    background-repeat:no-repeat;
-    background-size:cover; 
-}
+html { font-size: 16px; 
+    background:url(images/camerajin-dark.jpg) no-repeat center center fixed;
+    background-size:cover;}
 .hidden { display: none; }
 p {
     -webkit-font-smoothing: antialiased;
