@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+  <style>
+  video#bgvid { 
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background: url(metronome.jpg) no-repeat;
+      background-size: cover; 
+  }
+  h1.title {
+    /*text-shadow:0 0 40px linear-gradient(to bottom, #ff3232 0%,#207cca 65%,#7db9e8 100%);*/
+    /*background: linear-gradient(to bottom, #ff3232 0%,#207cca 65%,#7db9e8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000;
+    text-align: center;
+    font-size: 10em;
+    color: white;
+    font-weight: 200;
+    font-family: 'Lora', serif;
+  }
+
+  .side {
+    color: yellow;
+    padding: 15px;
+    z-index: 2; 
+    font-family: 'Lora', serif;
+    font-size: 5em;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+  }
+
+  .flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  </style>
+</head>
+
+<body>
+  <video autoplay loop muted id="bgvid">
+      <source src="videos/metronome.mp4" type="video/mp4">
+  </video>
+  <div class="flex-container">
+        <h1 class="title">
+            J
+        </h1>
+        <h3 class="side">
+            gets
+        </h3>
+        <h1 class="title">
+            I
+        </h1>
+        <h3 class="side">
+            bored
+        </h3>
+        <h1 class="title">
+             N
+        </h1>
+  </div>
+
+
+</body>
+</html>
