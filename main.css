@@ -4,10 +4,14 @@
     margin: 0;
     padding: 0;
 }
-html { font-size: 16px; 
+html { 
+    font-size: 16px; 
     background:url(images/camerajin-dark.jpg) no-repeat center center fixed;
-    background-size:cover;}
-.hidden { display: none; }
+    background-size:cover;
+}
+.hidden { 
+    display: none; 
+}
 p {
     -webkit-font-smoothing: antialiased;
     color: #C8C8C8;
@@ -41,10 +45,12 @@ a:hover { border-bottom: 1px solid rgba(255,255,255,0.5); }
     padding: 10px;
     width: 75%;
 }
-.info p { color: #D8D8D8; }
+.info p { color: #D8D8D8; text-align: justify; }
 div.name { margin-top: 5%; }
 h1 { color: #E8E8E8; font-size: 3.375rem; text-align: center; }
 h2 { color: #E8E8E8; font-size: 2.25rem; text-align: center; }
+h3 { color: #E8E8E8; font-size: 2.00rem; text-align: center; }
+h4 { color: #E8E8E8; font-size: 1.5rem; text-align: center; }
 .about { margin-bottom: 20px; text-align: center; }
 hr {
     background-color: red;
@@ -65,7 +71,45 @@ button {
     overflow: hidden;
     padding: 10px;
 }
+
+.wrapper { text-align: center; }
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.projects .project {
+    max-width: 40%;
+    margin: auto 10px;
+}
+
+.projects .project h4 {
+    padding-bottom: 10px;
+}
+
 @media (max-width: 600px) {
     .social { width: 90%; }
+    .projects .project {
+        flex: 1 auto;
+        max-width: 100%;
+    }
 }
-.wrapper { text-align: center; }
+
+a.project-link {
+    border-bottom: 0px solid white;
+}
+
+button.show-project {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.projects h3 {
+    width: 100%;
+}
+
+.info p:last-child {
+    margin-bottom: 0px;
+}
