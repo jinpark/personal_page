@@ -67,7 +67,7 @@ li:last-child {
 }
 
 p {
-    margin: 10px auto;
+    margin: 0 auto 10px auto;
 }
 
 .things-title {
@@ -78,12 +78,18 @@ p {
     list-style-type: none;
 }
 
+.project-info li p {
+    padding-left: 20px;
+}
+
 .links-all {
-        width: 100%;
+        width: 40%;
         display: flex;
+        margin: 0;
         align-content: space-between;
         justify-content: space-between;
 }
+
 @media only screen 
   and (max-device-width: 736px) { 
     .container {
@@ -104,5 +110,8 @@ p {
     }
     .flex {
         max-width: 90%;
+    }
+    .links-all {
+        width: 100%;
     }
 }
