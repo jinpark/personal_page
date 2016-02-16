@@ -1,104 +1,91 @@
 <!doctype html>
-<html>
+
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jin-Woo Park</title>
-    <link rel="Shortcut Icon" href="images/favicon.ico" type="image/x-icon" />
-    <meta name="robots" content="all" />
-    <link href="main.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Jin Park">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-    <div class="name">
-        <h1 class="english-name">JIN-WOO PARK</h1>
-        <h1 class="korean-name">박진우</h1>
-    </div>
-    <hr>
-    <h2 class="title">Software Engineer</h2>
-    <div class="wrapper">
-        <button class="more">Learn More</button>
-    </div>
-    <div class="about hidden" id="about">
-        <div class="info">
-            <p>Hello! My name is Jin-Woo Park, a software engineer with an interest in web development, data science, machine learning, data visualization and biomedical engineering.</p>
-            <p>I"m currently working remotely for <a href="http://www.dramafever.com">DramaFever</a> as a software engineer in Seoul.</p>
-            <p>Contact me at <a href="mailto:jin@jinpark.net">jin@jinpark.net</a> </p>
-        </div>
-        <button class="show-project">View Projects</button>
-        <div class="projects hidden">
-            <h3 class="title">Projects</h3>
-            <div class="project">
-                <a class="project-link" href="http://somethingsunshine.com">
-                    <h4>Something Sunshine</h4>
-                    <img src="http://images.jinpark.net/http://dropshare.jinpark.net/dropshare/iOS-Simulator-Screen-Shot-Aug-24-2015-7.33.47-PM-p9T.png/?rwidth=150" alt="">
-                    <p>Website and backend API using Django and HTML5 Audio and iOS and Android apps using Ionic</p>
-                </a>
+    <div class="container">
+        <div class="main-left">
+            <div class="photo-info">
+                <img class="profile-picture" src="images/profile.png" alt="">
+                <h2>Hello</h2>
+                <h3>My name is Jin.</h3>
+                <h4>Let's hang out!</h4>
             </div>
-            <div class="project">
-                <a class="project-link" href="https://github.com/jinpark/imageresizer">
-                    <h4>jimageresizer</h4>
-                    <img src="http://images.jinpark.net/http://dropshare.jinpark.net/dropshare/pb-F3WILCS4nu-gXo.png/?rwidth=300" alt="">
-                    <p>A quick image resizing and scaling program using imagemagick and wand. The images on this site uses jimageresizer!</p>
-                </a>
-            </div>  
-            <div class="project">
-                <a class="project-link" href="http://tellmeabout.coffee">
-                    <h4>Tell Me About Coffee</h4>
-                    <img src="http://images.jinpark.net/https://dropshare.jinpark.net/dropshare/pb-eDxAD4Uvi6-BO6.png/?rwidth=300" alt="">
-                    <p>A flask site built on Google App Engine that scrapes popular third wave coffee roasters to easily filter and search for similar coffees. Used Beautiful Soup, jQuery tablesorter, Google App Engine Cron and Google Cloud Monitoring Service</p>
-                </a>
-            </div>        
         </div>
-        <div class="social">
-            <a href="http://www.facebook.com/jinpark">
-              <img class="sociallogo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI0QTJFQzhDNjI0QjExRTBCQUNFRERDMjI4QjBCNkQwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI0QTJFQzhENjI0QjExRTBCQUNFRERDMjI4QjBCNkQwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjRBMkVDOEE2MjRCMTFFMEJBQ0VEREMyMjhCMEI2RDAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjRBMkVDOEI2MjRCMTFFMEJBQ0VEREMyMjhCMEI2RDAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7mtzjEAAADN0lEQVR42tSaS2jUUBSGMxkftT6q+KzVUhUKLhRdaB2tggtXs3EhOOJjoSIIBdGVCxfufEBBRdCNirgQ7EZs0Y3alSjig/pC0RaV4ovaFtui1tHxP/QEwpCZ3Jucm2QOfJtJcs/8ueeenHOTlCVn88EasB6sBA1gNqjm479BH/gInoF7TI+VAJsD9oAb4BMoaELCOsEhsCgOAYtBK/ga4M+XYghc5tk0blPAUTAgKKCYUXCeQ9WIbeDYLkREL8hJizjId6oQA6fAuLACUuBsTALctINpYURcTIAIh86gYs4kSITDLTCh1F33sgMcm9L2D7wF3Zz5Rss8n7IljlFG26/iLGNgYQ+C42AFGK/wH5b7jLfLbwAqJ14Ii3gMlmrOXMZnzH5QX26AI8IiqI6aFyAEMwpjXy11cR2HgKSQzQHXUkZx/HVeF58QFkEhahsW0lF84QzwTVjI6RDZrUnRRx4ss1x3LMu9g6S91Dh3ogcqlgY73T9cN/Dwyimm2Tv8XHnnolfDz2tHOGWVLzEISXGHGNYPPWSbbF5Yc2NoztL8BJcobJtJyNoYW+W80Dir7ahaS8PWaBts+lWaoWohX7XkbJZQVfsI/HLF7Wefa2ih3gYLPY5NB6s0/E914jRs5vgpvFmwUdN/3ubsEVUoqdoC3cxl892UsJSgkFrd7Gdzp5Y0052REZvLgaRZveb5fTaX2xL2J8YZ6aEF+gDsFlgfdZxBHBv0WX8prrjTHqlUV8hTi/vpYYEUPMwb0Q5bfJxX8RbsUBEjAXxnnZ7kvoHqd5uCkPcCfqghnGnzU7nDwIItKJzzV8DPXfDd6RCvldksS7pdKf5BukvMKYRWd0gfr5wtVPcux8kKnI3WUpHUVkEz8rzcJsUS8KNChGzym66WChByTjX22hIs5AmYrCqkhi9ImhDatmoMUoG+SZCQAd66CmS0MdGVACE0E81hczVtTtyMUUiXpf+iqGw/foxroyiFXLLG3hSIG+1uPIxACK3NrabLAqpt9lljrw2khXwAh60QHwcEsSq+a+2W9ys7PyGTeBHTd1z0McBeU2GkYw1gB7jAbWe/ghCqk7Zb/MYprP0XYABCss9CyOVB+gAAAABJRU5ErkJggg=="/>
-            </a>
-            <a href="http://www.last.fm/user/jinp6301/">
-              <img class="sociallogo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAu1JREFUeNrcWrtx3DAQpc6RM4YOETqkKxDdAdwBVYHPHaADzlXAcQW0Kzh1gHMFlDNnUOjsDHoWGggDgrsgyAO1MzuiOHc4POznPYC8K9IZ017D33u4V2kv4foJ/Fn7L+0X7Y/w/81tnHSrfdB+jfSz9sYCvKmNK98vmLzPFSwK2yoCqQH4AIk1QRzhR64b+QA1lszG3O02BOB6kwqEvCEI491bALEITG4gjLdUIF2GIMg102QMwrRnhuEJlTkQowaC1u8AxGyK1TsCYQjzxd5Z12NH+BjR4R4tVfthQ703dtbfoKJf1Qa1p1eByHaEcbgzuYagpqX744JQZFh1yma4qJlZ7TNyTq8WVC5g1hq8InBSOzEGc8AMFJJkESDYxAQV3Hc3Se7qskCnbOH7AkkFEkuAMoIwlROh0pqUQnRKKpeVB0TOf7OuOVK8mRw3YMaOdrL27pjvU6wqZopqmFjVGAa2v18mFqfHwwzS7040qCtlithE5Yc1lrn3WfuDywcRnBLsDDyBfOk9fKUmuhyDLTU1Sv/3+KEP1IHOQ3HmGUfBpEPRxBKjOBTb2Ffr+mSlgzkTE56mM0qfT5SUO6+cWmb17foaAq3+6Hy2ThGRe+v658JibDxR8bXRFha3dETprPUrt18VORalPvkBDpTnDqZNq3wgROEZyPRkjcU9BJnCnjA5OHgkiirwEoUhCDK2poy/WErRKJxJuCq2dmpi8KRjRSj2nrpX7wIFOiXjS8/Yg0chVB4Zj5Xyx5gjIMrGqg4wtETInbmN2dXRbVEdqXNSxB6HI1WAmiBC04Ix8+l9KyAiyU7CxJc8tYr1eoq09nA45z2ks4+D/mp/P4UyQ/ui/U/oA3IH0UCdyleZp5ikhC3XE3lVRDz1FRmCiH442mUEgqd4LL3bSLjGb9QAZLHCmxBs4QEE1cXaRMRXliPnIvEbD5gWnZI8u1urigrSQEYUcV8kesXpbgVgZoM0VaQX2GNfUv7oPwEGAPOSfM2qn2CTAAAAAElFTkSuQmCC"/>
-            </a>
-            <a href="http://www.flickr.com/photos/52570799@N03/">
-              <img class="sociallogo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDRTc5N0UxNjI0QjExRTBBREQzOTU2RERBMjM3OUE0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDRTc5N0UyNjI0QjExRTBBREQzOTU2RERBMjM3OUE0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUNFNzk3REY2MjRCMTFFMEFERDM5NTZEREEyMzc5QTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUNFNzk3RTA2MjRCMTFFMEFERDM5NTZEREEyMzc5QTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5GWrsiAAADiUlEQVR42tSaa0gUURTHZ1c3UxMlellpZVCQIRQ9iKCMKPray6gPQRZBQS8oCOlJQV96QQWVQRjUhygig55YlFZQSh96mKEVRi+jJxqli9v/wJkYlpk7d+bO7M4c+H0Z7px7/3vvnnvO2Y1o3tlwMAVMAxPAKDAA9AMR8Bt8Be3gKXjItGoBsIFgBbgMPoKEQ76BOrABjEyHgGKwz+XirfgFqkFZKgRkgyo+Igmf+AuOg2F+iZgBnvgoIJn3YKnXIjaB7hSKMHIE9FEVQNHmWJoEGLkK8lVEnA6ACJ16UOBGyNEAidC5BbKcficSAeWUrIjpoCfAQohVdiJywfOAiyB+gBKRkJ0hEKFz0UpEEfgZIiFEuZmQ/SETQdxMFtEffAmhkF4wkQRksJAKsEwyqlFd0QbecMaa7UEKEQdv2S8lpDH2K3Np/wHX9Qe1EuqfgTVcMGXyexmc0leCJpeJ4TYwznDR0eIGgfm8QDsfrbroQtBhM/gAyLH5dGhXdjkQcYHntjMq3LpsfNHdpy20GbTd4TFZJyHiLH/ysjaPj5CVv6006JBgQK3LM18j8PlCYnfNbLPA5yUacFtQqZW6FFLEgcDM7yKXPunoNlv4pGaG9lqQaarYeROfFJn6KvisslhrR5RbNmZ2V1HIHZNnj/isu7V6i+d5UU4UzeydopB2yWdO7BPfOcmWFRW8lNBCZFHBVhd70Pvy2ucQw2VstO4od/vMrFxxUrP3p0qmHlY20+I5XZjafUH4Ha+wG1bhd7FC+H1p4ZOeaycEF80Vl5OesbkQc1343CLweY0GLLdJJ3Y4nHC9RIpyzuMUZQ8NGs01sGjigxKfIm39boel6lAJEZUSSeNc4+VlNzE1JdZy0R/j9yiCjAArFdP4UsONTzs1GCwANyR8fDB2ITc6mJwKqxbQyLlPpweVXpxTpUbOm5x0+2uSk7wuLXylLjHbSaQJKk2Gcv2/lYWgw5hMhVWEOBkiEQ/MdsOYy3wOgYg4pztCWxICIXvD/NuITp3hHrO1mGRPKdW08GXpyPK5tAyKCKr3x7jN/wu4UZxuEc0qInSjHKg6zR33Qs1DW635+4+HZHo4OmX6UeOXcC3ht4h7ej/Xb5vF7dRejwU0cNoR0VJsk8Fh8Eph8dQ/oz8mzFFZiFfKc/iXIzoOk8BYjvd5HCwi3Mzo5F/G2jhzpcbHY/BddQH/BBgApamPfYP5qpsAAAAASUVORK5CYII="/>
-            </a>
-            <a href="http://blog.jinpark.net/">
-              <img class="sociallogo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtNJREFUeNrsms1R4zAUgGVhZjmGDpIKyFZAUgGhApIOoAKPTxyX3LglqQB34OS4p3UJ7gAd2VlgeG94ZrxGjv4sgz15MxoH4sj69PR+9OSANSDHP04GcJlAG0M7p+ug5nYBLYO2o+v2398n4TqGwBFgBpcraDPHcSTQNgCUtAoCAHO4RNCGrFnJocUAtPYKAgC4fFYeAGRACwDa6v7gSNcGjsLwFj7e71n7TQo+Yw7PxOf+fn15fnLWCEDg7D+QAesIGu5S8v8rS02iQ5iqHEKggMDBp4ZaQC80lfSVkmezEUEwWd0NvGGIYgZ9LLWUxqQPQnEhtbSHnUe7SWlsahBHCOESC1xgZBqJDAy7KssWPNqYxlgPQnHi2sH337F25JrGWquRlUPnl03kTAaykoJQ2mHj5wVF4Yy1K0Ma8yeNRA7Bas2+RqL/AiJlsQ+GAEsTAIoBKk+I0X9usaSTsNSBtsAPf5pOnc7SqxqwpuDYE04+eca6KzNk4A75z3eSCXcIft9Jxpz22F2X8wDW16NFXlXdud2ojBme80tD+0PbWBZaJocTSTKnkyP5sscBZz2RA8gB5ACiBhE94BDcU9Wjbcm4x6pHm7LrlUa2PQDZcioYJB2GSJChcL+bDoNsPuIIVQdz3wbpoc+8qGyWA2LsGWStGbNMbDb+FNmpImKrFWV6Dv1j39Mae8TvsEo5MpjQvFzFCStfLth7AdtUznRuos3XJW20CvisXKGkgyUdWZT/CGp2cjb139MmSqYEqJrMO3jWjSppjC2D5KolL5XJlh+XqF/QWjadXawv+YYpjuCEVhrvADMHmD/7jsg0llVkCiG1kUrHtueIjLwTBqu9r2jQ4C/Ye7VzqICoXfI6x9PFUZxLIS+XuPaBZp/ux9MVmIjZn2bZCsaWWMcb9uYVDqM9O3YMbUTBKPcIMDKBMNaIREPdfs2pxoYm7AtfPHsTYAADmhUy7PYI4gAAAABJRU5ErkJggg=="/>
-            </a>
-            <a href="https://github.com/jinpark">
-              <img class="sociallogo" src="data:image/png;base64,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"/>
-            </a>
+        <div class="main-right">
+            <div class="about flex">
+                <div class="title">
+                    About Me
+                </div>
+                <div class="about-me">
+                    <p>My name is Jin-Woo Park. I am currently asoftware engineer for DramaFever working remotely in Seoul, Korea.</p>
+                    <div class="things">
+                        <h4 class="things-title">Things I'm into</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Flask</li>
+                            <li>Ruby on Rails</li>
+                            <li>Javascript</li>
+                            <li>Other Stuff</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="projects flex">
+                <div class="title">
+                    Projects
+                </div>
+                <div class="project-info">
+                    <ul>
+                        <li>
+                            <h3>Something Sunshine</h3>
+                            <p>A podcast run by two coworkers, Bobby and Ahnmin, where they discuss their favorite films, music, television shows, and videogames</p>
+                            <p>Django webapp and API, iOS and Android app written in ionic/angular leveraging html5 audio. </p>
+                        </li>
+                        <li>
+                            <h3>Tell Me About Coffee</h3>
+                            <p>A small site that scrapes and organizes third wave coffee roasters to easily sort and search for similar coffees.</p> 
+                            <p>Flask running on Google App Engine using their whole ecosystem with Semantic UI for the frontend.</p>
+                        </li>
+                        <li>
+                            <h3>Simpsons</h3>
+                            <p>I love the simpsons and Simpsons World is too slow. This is a small (personal) web app for viewing simpsons episodes. Keeps track of history, random videos and gif/screenshots.</p>
+                            <p>Ruby on Rails webapp and API with ffmpeg in the background for gif and screenshots. Apple TV app written with TVML and TVJS.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links flex">
+                <div class="title">
+                    Find me here
+                </div>
+                <div class="links-all">
+                    <a href=""><i class="fa fa-tumblr-square fa-3x"></i></a>
+                    <a href=""><i class="fa fa-github-square fa-3x"></i></a>
+                    <a href=""><i class="fa fa-lastfm-square fa-3x"></i></a>
+                    <a href=""><i class="fa fa-flickr fa-3x"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript">
-    $(".more").click(function(){
-        $(".more").fadeTo(1000, 0, function(){
-            $(this).css("visibility", "hidden");
-            $("html,body").animate({
-             scrollTop: $("#about").offset().top
-            });
-        });
-        $("div.about").fadeIn();
-        $("div.projects").hide();
-    });
-    $("button.show-project").click(function(){
-        $(this).fadeTo(1000, 0, function(){
-            $(this).css("visibility", "hidden");
-        });
-        $("div.projects").fadeIn();
-    });
-    </script>
-    <script>
-    var _gaq = _gaq || [];
-    _gaq.push(["_setAccount", "UA-22951868-1"]);
-    _gaq.push(["_trackPageview"]);
 
-    (function() {
-        var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
-        ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
-
+    <script src=""></script>
 </body>
 </html>
