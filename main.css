@@ -45,7 +45,7 @@
 }
 
 .title {
-    flex: 0 0 30%;
+    flex: 0 0 20%;
 }
 
 .about ul {
@@ -54,6 +54,7 @@
 
 li {
     margin: 10px;
+    margin-left: 0;
 }
 
 li:first-child {
