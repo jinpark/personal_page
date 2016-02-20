@@ -97,8 +97,11 @@ p {
     margin-bottom: 40px;
 }
 
-h4 a {
+h4 {
     font-weight: 500;
+}
+
+h4 a {
     margin: 20px 0 10px 0;
 }
 
@@ -139,8 +142,16 @@ h4:first-child {
     }
     .flex {
         max-width: 90%;
+        flex-wrap: wrap;
     }
     .links-all {
         width: 100%;
+    }
+    .title {
+        text-align: center;
+        margin: 20px auto 20px auto;
+    }
+    .project-info li p {
+        padding-left: 40px;
     }
 }
