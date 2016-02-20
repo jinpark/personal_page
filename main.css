@@ -106,6 +106,19 @@ h4:first-child {
     margin-top: 0;
 }
 
+.email {
+    color: white;
+    text-decoration: none;
+}
+
+.email i {
+    margin-left: 10px;
+}
+
+.photo-info * {
+    margin-top: 10px;
+}
+
 @media only screen 
   and (max-device-width: 736px) { 
     .container {
