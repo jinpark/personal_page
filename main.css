@@ -65,9 +65,23 @@ li:last-child {
     margin-bottom: 0px;
 }
 
-.profile-picture {
-    width: 200px;
-    /*box-shadow: 0 0 33px rgba(255, 255, 255, .8);*/
+.picture-holder {
+    width: 400px;
+    height: 400px;
+    background-size: cover;   
+    background-image: url('images/normal-afro.png'); 
+}
+
+.picture-holder:hover {
+    background-image: url('images/bowie.png'); 
+}
+
+.fade {
+    -webkit-transition: background-image 1s linear;
+    -moz-transition: background-image 1s linear;
+    -o-transition: background-image 1s linear;
+    -ms-transition: background-image 1s linear; 
+    transition: background-image 1s linear;
 }
 
 p {
@@ -141,7 +155,7 @@ h4:first-child {
     .main-left {
         position: relative;
         margin-left: 0px;
-        min-height: 500px;
+        min-height: 700px;
     }
     .main-right {
         margin: auto;
