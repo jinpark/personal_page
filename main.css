@@ -67,7 +67,7 @@ li:last-child {
 
 .profile-picture {
     width: 200px;
-    box-shadow: 0 0 33px rgba(255, 255, 255, .8);
+    /*box-shadow: 0 0 33px rgba(255, 255, 255, .8);*/
 }
 
 p {
@@ -95,7 +95,7 @@ p {
 }
 
 .profile-picture {
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     margin-bottom: 40px;
 }
 
